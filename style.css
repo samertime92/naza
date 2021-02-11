@@ -1,0 +1,161 @@
+body{margin:0px;padding:0px;}
+@media only screen and (min-width: 320px)  {
+#works{ margin-left:10%;margin-right: 2%;font-family: cooper-black-std, serif;;position: relative;display: inline-block;border-style: solid;border-radius: 3px;border-color: lightgreen;float:left;color:#83a95c;font-size: 13px}
+#about{ margin-left:3%; margin-right: 2%;font-family: cooper-black-std, serif;;position: relative;display: inline-block;border-style: solid;border-radius: 3px;border-color: lightgreen;float: left;color:#83a95c ;font-size: 13px;}
+#contact{margin-left:3%; margin-right: 2%;font-family: cooper-black-std, serif;;position: relative;display: inline-block;border-style: solid;border-radius: 3px;border-color: lightgreen;float: left;color:#83a95c;font-size: 13px;}
+
+  #main-btn {margin-top: 5%;display: inline-block;
+    margin-right: 0px;
+    margin-left: 25px;
+    top: 8%;
+    right: 0%;
+    position: relative;
+    width: 90%;
+    height: 10%;
+    border-radius: 3px;
+    border-style: solid none solid solid;
+    border-color: #83a95c;
+    border-width: 2px;
+
+}
+@keyframes btn1 {
+  0%{filter:brightness(1000%);opacity: 0%}
+    100{ filter: brightness(100%);opacity: 1;}
+}
+  #name-hollow {
+    position: absolute;
+    width: 50%;
+    left:47%;
+    display: inline-block;
+    margin: 0 0 0 0px;
+    top: 10%;
+    animation-name: name,name0;
+    animation-duration: 7s,4s;
+    animation-iteration-count: 1,1;
+    animation-timing-function:ease-in,ease-in-out;
+    animation-fill-mode:forwards,forwards;
+    animation-delay: 0s,7s;
+}
+@keyframes name {
+  0%{opacity: 1;transform: rotate(7600deg);filter: blur(0px) brightness(200%); width:0px}
+  30%{opacity: 1; filter: blur(5px)brightness(10%) saturate(100); ;}
+
+  100%{opacity: 1;transform: rotate(0deg); filter: blur(0px) }
+
+}
+@keyframes name0 {0%{top:10%}
+  100%{top:17%}
+}
+
+#name-hollow1 {
+  position: absolute;
+  width: 50%;
+  left:48%;
+  display: inline-block;
+  margin: 0 0 0 0px;
+  top: 31%;
+  animation-name: name1,name11;
+  animation-duration: 5s,4s;
+  animation-iteration-count: 1,1;
+  animation-timing-function:ease-in,ease-in-out;
+  animation-fill-mode:forwards,forwards;
+  animation-delay: 0s,5s;
+}
+@keyframes name1 {
+  0%{opacity: 1;transform: rotate(7600deg);filter: blur(0px) brightness(200%); width:0px}
+  30%{opacity: 1; filter: blur(5px)brightness(10%) saturate(100); ;}
+
+  100%{opacity: 1;transform: rotate(0deg); filter: blur(0px) }
+
+}
+@keyframes name11 {0%{top:31%}
+  100%{top:60%}
+}
+
+#maincontainer{width:100%;;margin: 0px;padding: 0px;position: relative;}
+#nazfondo{width:100%;height:auto;z-index: 0;position: absolute;}
+#naz-desgin {
+  z-index: 1;
+  position: relative;
+  top: 40px;
+  left: -7px;
+  width: 56%;
+  display: inline-block;
+  margin-right: 27%;
+  margin-left: 7%;
+  margin-top: 15%;
+  margin-bottom: 2%;
+  animation: nazaa,nazaa1,nazaa2 ;
+  animation-duration: 4s,4s,10s;
+  animation-fill-mode: forwards,forwards,forwards;
+  animation-iteration-count: 1,1,infinite;
+  animation-timing-function: ease-out,ease-out,linear;
+  animation-delay: 3s,7s,15s;
+  visibility: hidden;
+}
+@keyframes nazaa {
+  0%{visibility:visible;opacity:1;filter: blur(300px)  brightness(1000%) hue-rotate(360deg);}
+    100%{visibility:visible;opacity:1;filter: blur(0px) brightness(500%) hue-rotate(180deg); }
+}
+@keyframes nazaa1 {
+  0%{visibility:visible;opacity:1;filter: brightness(500%) hue-rotate(90deg); }
+    100%{visibility:visible;opacity:1;filter: brightness(100%) hue-rotate(0deg)saturate(100%)}
+}
+@keyframes nazaa2 {
+  0%{filter:saturate(100%)}
+  50%{filter:saturate(300%);}
+  100%{filter:saturate(100%)}
+}
+#sec1{position: relative;width:100%;height:444px;top:0px;left:0px;display: inline-block;margin-bottom: 10%;
+animation: sec1 5s forwards infinite ease;
+animation-delay: 6s
+}
+@keyframes sec1 {0%{top:0px}
+  50%{top:10px}
+    100%{top:0px}
+
+
+}
+ /* #nombre{margin:0px;padding: 0px;left:0px;
+  display:inline-block;position: relative;background: url(nombre.gif);width: calc(15000px / 19);
+  ;top:0px;
+  transform: translate(50%,50%);
+    height: 461px;
+    animation: animate 2.5s steps(19) infinite;
+    animation-play-state: running;
+    animation-delay: 2s;
+}
+@keyframes animate {
+  0% { background-position: 0;opacity: 1;}
+50%{opacity: 1 ;}
+    100%{background-position: 15000px;opacity: 1;}
+
+}*/
+#nombre {
+    margin: 0px;
+    padding: 0px;
+    left: -19%;
+    display: inline-block;
+    position: absolute;
+    background: url(nombre1.png);
+    width: 525px;
+    transform: scale(0.4);
+    margin-left: 0%;
+    top: 0px;
+    margin-right: 0%;
+    height: 308px;
+    animation: animate 2s steps(19) infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-delay: 5s;
+    opacity: 0;
+}
+@keyframes animate {
+  0% { background-position: 0px;opacity: 1;}
+50%{opacity: 1 ;}
+    100%{background-position: 10000px;opacity: 1;}
+ }
+
+#fuck{width:100%;position: relative;height:40%;margin: 0px;margin-left: 0px;}
+}
