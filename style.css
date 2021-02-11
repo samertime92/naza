@@ -134,7 +134,7 @@ animation-delay: 6s
 #nombre {
     margin: 0px;
     padding: 0px;
-    left: -19%;
+    left: 0%;
     display: inline-block;
     position: absolute;
     background: url(nombre1.png);
