@@ -134,6 +134,21 @@ animation-delay: 0s
 
 
 }
+#fire {
+    position: absolute;
+    top: -40%;
+    left: 35%;
+    z-index: 0;
+    opacity: 0;
+    transform: translate(50%,50%);
+    width: calc(600px / 6);
+    height: 141px;
+    background: url(fire.png);
+    animation: animate 0.8s steps(6) infinite;
+    /* animation-timing-function: linear; */
+    animation-play-state: running;
+    animation-delay: 2s;
+}
  /* #nombre{margin:0px;padding: 0px;left:0px;
   display:inline-block;position: relative;background: url(nombre.gif);width: calc(15000px / 19);
   ;top:0px;
@@ -149,7 +164,7 @@ animation-delay: 0s
     100%{background-position: 15000px;opacity: 1;}
 
 }*/
-#nombre {  z-index: 1;transform:scale(0.4)translate(-169%,50%);
+/* #nombre {  z-index: 1;transform:scale(0.4)translate(-169%,50%);
     margin: 0px 0px 0px 0px;
     padding: 0px;
     display:inline-block;
@@ -160,8 +175,7 @@ animation-delay: 0s
     top: 0px;
     height: 308px;
     animation: animate 2s steps(19) infinite;
-    /* animation-direction: alternate-reverse; */
-    /* animation-fill-mode: forwards; */
+
     animation-play-state: running;
     animation-delay: 0s;
     opacity: 1;
@@ -170,6 +184,6 @@ animation-delay: 0s
 @keyframes animate {
   0% { background-position: 0px;opacity: 1;}
     100%{background-position: 10000px;opacity: 1;}
- }
+ }*/
 
 }
