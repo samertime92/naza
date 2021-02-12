@@ -142,19 +142,17 @@ animation-delay: 0s
     100%{background-position: 15000px;opacity: 1;}
 
 }*/
-#nombre { transform:scale(0.4); z-index: 1;
-    margin: 0px;
+#nombre {  z-index: 1;
+  transform: translate(50%,50%);
+    margin: 0px 0px 0px 0px;
     padding: 0px;
     left: 0%;
     display:inline-block;
-    visibility: collapse;
     position: absolute;
     background: url(nombre1.png);
     width: calc(10000px / 19);
     ;
-    margin-left: 0%;
     top: 0px;
-    margin-right: 0%;
     height: 308px;
     animation: animate 2s steps(19) infinite;
     /* animation-direction: alternate-reverse; */
@@ -165,9 +163,8 @@ animation-delay: 0s
 
 }
 @keyframes animate {
-  0% { background-position: 0px;opacity: 1;visibility: visible;}
-50%{opacity: 1 ;}
-    100%{background-position: 10000px;opacity: 1;visibility: visible;}
+  0% { background-position: 0px;opacity: 1;}
+    100%{background-position: 10000px;opacity: 1;}
  }
 
 }
