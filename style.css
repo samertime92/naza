@@ -136,10 +136,10 @@ animation-delay: 0s
 }
 #fire {
     position: absolute;
-    top: -40%;
+    top: 0%;
     left: 35%;
-    z-index: 0;
-    opacity: 0;
+    z-index: 2;
+    opacity: 1;
     transform: translate(50%,50%);
     width: calc(600px / 6);
     height: 141px;
@@ -148,6 +148,12 @@ animation-delay: 0s
     /* animation-timing-function: linear; */
     animation-play-state: running;
     animation-delay: 2s;
+}
+@keyframes animate {
+  0% { background-position: 0;opacity: 0;}
+50%{opacity: 1}
+    100%{background-position: 600px;opacity: 1}
+
 }
  /* #nombre{margin:0px;padding: 0px;left:0px;
   display:inline-block;position: relative;background: url(nombre.gif);width: calc(15000px / 19);
