@@ -4,7 +4,7 @@ body{margin:0px;padding:0px;}
 animation-duration: 2s;animation-timing-function: linear;animation-fill-mode: forwards;animation-iteration-count: 1s;opacity: 0;
 animation-delay:5s; }
 @keyframes btns {
-  0%{ font-size: 0px;opacity: 0;filter: }
+  0%{ font-size: 0px;opacity: 0;}
     100%{ font-size: 13px;opacity:1}
 }
 #about{margin-top: 8px;margin-bottom: 6px;padding: 5px 11px 5px 11px;margin-left:2%; margin-right: 2%;font-family: cooper-black-std, serif;;position: relative;display: inline-block;border-style: solid;border-radius: 3px;border-color: #adce74;float: left;color:#83a95c ;font-size: 13px;
@@ -146,10 +146,11 @@ animation-delay: 6s
     margin: 0px;
     padding: 0px;
     left: 0%;
-    display: inline-block;
+    display:inline-block;
+    visibility: collapse;
     position: absolute;
     background: url(nombre1.png);
-    width: 525px;
+    width: calc(10000px/19);
     ;
     margin-left: 0%;
     top: 0px;
@@ -164,9 +165,9 @@ animation-delay: 6s
 
 }
 @keyframes animate {
-  0% { background-position: 0px;opacity: 1;}
+  0% { background-position: 0px;opacity: 1;visibility: visible;}
 50%{opacity: 1 ;}
-    100%{background-position: 10000px;opacity: 1;}
+    100%{background-position: 10000px;opacity: 1;visibility: visible;}
  }
 
 }
