@@ -105,7 +105,7 @@ opacity: 0;
   visibility: hidden;
 }
 @keyframes nazaa {
-  0%{visibility:visible;opacity:1;filter: blur(300px)  brightness(1000%) hue-rotate(360deg);}
+  0%{visibility:visible;opacity:1;filter: blur(0px)  brightness(1000%) hue-rotate(360deg);}
     100%{visibility:visible;opacity:1;filter: blur(0px) brightness(500%) hue-rotate(180deg); }
 }
 @keyframes nazaa1 {
@@ -150,7 +150,7 @@ animation-delay: 6s
     visibility: collapse;
     position: absolute;
     background: url(nombre1.png);
-    width: calc(10000px/19);
+    width: calc(2000px/19);
     ;
     margin-left: 0%;
     top: 0px;
