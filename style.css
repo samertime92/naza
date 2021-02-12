@@ -1,5 +1,12 @@
 body{margin:0px;padding:0px;}
 @media only screen and (min-width: 320px)  {
+  @keyframes bt1 {
+    0%{opacity: 0;filter: blur(20px);}
+      100%{opacity: 1;filter:blur(0px)}
+
+  }
+  #langdiv{ margin-top: 1%;margin-bottom: 3%;margin-left: 20%;margin-right: 0.5%;right:0px;opacity: 0;border-color:#83a95c ; border-radius: 3px;border-style: hidden; border-left:none;z-index: 2;position: absolute;; background-color: none;width:50%;animation: bt1;animation-duration: 4s;animation-timing-function: ease;animation-fill-mode: forwards;animation-delay: 3s;}
+  .lang{font-family: cooper-black-std, serif;padding-right: 10px;border-right:solid;z-index: 2;float:left;position: relative;font-size: 10px; margin-right: 5px;margin-left: 5px;color: green}
 #works{ margin-top: 8px;margin-bottom: 6px;padding: 5px 11px 5px 11px;margin-left:2%;margin-right: 2%;font-family: cooper-black-std, serif;;position: relative;display: inline-block;border-style: solid;border-radius: 3px;border-color: #adce74;float:left;color:#83a95c;font-size: 13px;animation:btns;
 animation-duration: 2s;animation-timing-function: linear;animation-fill-mode: forwards;animation-iteration-count: 1s;opacity: 0;
 animation-delay:5s; }
@@ -142,18 +149,17 @@ animation-delay: 0s
     100%{background-position: 15000px;opacity: 1;}
 
 }*/
-#nombre {  z-index: 1;
-  transform: translate(0%,50%);
+#nombre {  z-index: 1;transform:scale(0.4)translate(-169%,50%);
     margin: 0px 0px 0px 0px;
     padding: 0px;
     display:inline-block;
-    position: relative;
+    position: absolute;
     background: url(nombre1.png);
     width: calc(10000px / 19);
     ;
     top: 0px;
     height: 308px;
-    animation: animate 2s steps(1) infinite;
+    animation: animate 2s steps(19) infinite;
     /* animation-direction: alternate-reverse; */
     /* animation-fill-mode: forwards; */
     animation-play-state: running;
