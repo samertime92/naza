@@ -143,18 +143,17 @@ animation-delay: 0s
 
 }*/
 #nombre {  z-index: 1;
-  transform: translate(50%,50%);
+  transform: translate(0%,50%);
     margin: 0px 0px 0px 0px;
     padding: 0px;
-    left: 0%;
     display:inline-block;
-    position: absolute;
+    position: relative;
     background: url(nombre1.png);
     width: calc(10000px / 19);
     ;
     top: 0px;
     height: 308px;
-    animation: animate 2s steps(19) infinite;
+    animation: animate 2s steps(1) infinite;
     /* animation-direction: alternate-reverse; */
     /* animation-fill-mode: forwards; */
     animation-play-state: running;
