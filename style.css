@@ -134,13 +134,13 @@ animation-delay: 0s
 }
 #fire {
     position: absolute;
-    top: 0%;
-    left: 35%;
-    z-index: 2;
+    top: -23%;
+    left: -62%;
+    z-index: 1;
     opacity: 1;
-    transform: translate(50%,50%);
+    transform: translate(50%,50%) scale(0.5);
     width: calc(10000px / 19);
-    height: 141px;
+    height: 307px;
     background: url(nombre1.png);
     animation: animate 2s steps(19) infinite;
     /* animation-timing-function: linear; */
@@ -148,7 +148,7 @@ animation-delay: 0s
     animation-delay: 2s;
 }
 @keyframes animate {
-  0% { background-position: 0;opacity: 0;}
+  0% { background-position: 0;opacity: 1;}
 50%{opacity: 1}
     100%{background-position: 10000px;opacity: 1}
 
