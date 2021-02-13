@@ -5,7 +5,29 @@ body{margin:0px;padding:0px;}
       100%{opacity: 1;filter:blur(0px)}
 
   }
-  #langdiv{ margin-top: 1%;margin-bottom: 3%;margin-left: 20%;margin-right: 0.5%;right:0px;opacity: 0;border-color:#83a95c ; border-radius: 3px;border-style: hidden; border-left:none;z-index: 2;position: absolute;; background-color: none;width:50%;animation: bt1;animation-duration: 4s;animation-timing-function: ease;animation-fill-mode: forwards;animation-delay: 3s;}
+
+  #langdiv {
+      margin-top: 1%;
+      margin-bottom: 3%;
+      margin-left: 20%;
+      margin-right: 0.5%;
+      right: 0px;
+      opacity: 0;
+      border-color: #83a95c;
+      border-radius: 3px;
+      border-style: hidden;
+      border-left: none;
+      z-index: 2;
+      position: absolute;
+      background-color: none;
+      width: 65%;
+      animation: bt1;
+      animation-duration: 4s;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards;
+      animation-delay: 3s;
+  }
+
   .lang{font-family: cooper-black-std, serif;padding-right: 10px;border-right:solid;z-index: 2;float:left;position: relative;font-size: 10px; margin-right: 5px;margin-left: 5px;color: green}
 #works{ margin-top: 8px;margin-bottom: 6px;padding: 5px 11px 5px 11px;margin-left:2%;margin-right: 2%;font-family: cooper-black-std, serif;;position: relative;display: inline-block;border-style: solid;border-radius: 3px;border-color: #adce74;float:left;color:#83a95c;font-size: 13px;animation:btns;
 animation-duration: 2s;animation-timing-function: linear;animation-fill-mode: forwards;animation-iteration-count: 1s;opacity: 0;
@@ -18,27 +40,33 @@ animation-delay:5s; }
 animation-duration: 2s;animation-timing-function: linear;animation-fill-mode: forwards;animation-iteration-count: 1s; animation-name: btns;animation-delay: 5.5s;opacity: 0;}
 #contact{animation-duration: 2s;animation-timing-function: linear;animation-fill-mode: forwards;animation-iteration-count: 1s; animation-name: btns;animation-delay: 6s;margin-top: 8px;margin-bottom: 6px;padding: 5px 11px 5px 11px;margin-left:2%; margin-right: 0%;font-family: cooper-black-std, serif;;position: relative;display: inline-block;border-style: solid;border-radius: 3px;border-color: #adce74;float: left;color:#83a95c;font-size: 13px;opacity:0;}
 
-  #main-btn {margin-top: 5%;display: inline-block;
+#main-btn {
+    margin-top: 5%;
+    display: inline-block;
     margin-right: 0px;
     margin-left: 25px;
     top: 8%;
-    right: -3%;
+    right: 7%;
     position: relative;
-    width: 90%;
+    width: 27%;
     height: 10%;
     border-radius: 3px;
     border-style: solid none solid solid;
     border-color: #83a95c;
     border-width: 2px;
-animation-name:bt;
-animation-duration: 2s;
-animation-fill-mode: forwards;
-animation-delay: 4s;
-opacity: 0;
+    animation-name: bt;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+    opacity: 0;
 }
 @keyframes bt {
   0%{opacity: 0%;width:1%;border-width: 20px}
-    100%{opacity: 100%;width:90% ;border-width:2px;}
+  100% {
+    opacity: 100%;
+    width: 99%;
+    border-width: 2px;
+}
 }
   #name-hollow {
     position: absolute;
@@ -74,7 +102,12 @@ opacity: 0;
 }
 
 @keyframes name11 {0%{top:50%;filter: blur(20px);width:0%;}
-  100%{top:72%;width:50%;left:50%;filter: blur(0px)}
+100% {
+    top: 63%;
+    width: 50%;
+    left: 50%;
+    filter: blur(0px);
+}
 }
 
 #maincontainer{width:100%;;margin: 0px;padding: 0px;position: relative;}
@@ -123,11 +156,11 @@ animation-delay: 0s
 }
 #fire {
     position: absolute;
-    top: -23%;
-    left: -62%;
+    top: -29%;
+    left: -95%;
     z-index: 1;
     opacity: 1;
-    transform: translate(50%,50%) scale(0.5);
+    transform: translate(50%,50%) scale(0.4);
     width: calc(10000px / 19);
     height: 307px;
     background: url(nombre1.png);
