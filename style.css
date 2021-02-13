@@ -28,13 +28,16 @@ body{margin:0px;padding:0px;}
       animation-delay: 3s;
   }
 
-  .lang{font-family: cooper-black-std, serif;padding-right: 10px;border-right:solid;z-index: 2;float:left;position: relative;font-size: 10px; margin-right: 5px;margin-left: 5px;color: green}
+  .lang{font-family: cooper-black-std, serif;padding-right: 10px;border-right:solid;z-index: 2;float:left;position: relative;font-size: 10px; margin-right: 5px;margin-left: 5px;color: #83a95c}
 #works{ margin-top: 8px;margin-bottom: 6px;padding: 5px 11px 5px 11px;margin-left:2%;margin-right: 2%;font-family: cooper-black-std, serif;;position: relative;display: inline-block;border-style: solid;border-radius: 3px;border-color: #adce74;float:left;color:#83a95c;font-size: 13px;animation:btns;
 animation-duration: 2s;animation-timing-function: linear;animation-fill-mode: forwards;animation-iteration-count: 1s;opacity: 0;
 animation-delay:5s; }
 @keyframes btns {
   0%{ font-size: 0px;opacity: 0;}
-    100%{ font-size: 13px;opacity:1}
+  100% {
+    font-size: 10px;
+    opacity: 1;
+}
 }
 #about{margin-top: 8px;margin-bottom: 6px;padding: 5px 11px 5px 11px;margin-left:2%; margin-right: 2%;font-family: cooper-black-std, serif;;position: relative;display: inline-block;border-style: solid;border-radius: 3px;border-color: #adce74;float: left;color:#83a95c ;font-size: 13px;
 animation-duration: 2s;animation-timing-function: linear;animation-fill-mode: forwards;animation-iteration-count: 1s; animation-name: btns;animation-delay: 5.5s;opacity: 0;}
@@ -46,7 +49,7 @@ animation-duration: 2s;animation-timing-function: linear;animation-fill-mode: fo
     margin-right: 0px;
     margin-left: 25px;
     top: 8%;
-    right: 7%;
+    right: 0%;
     position: relative;
     width: 27%;
     height: 10%;
@@ -64,7 +67,7 @@ animation-duration: 2s;animation-timing-function: linear;animation-fill-mode: fo
   0%{opacity: 0%;width:1%;border-width: 20px}
   100% {
     opacity: 100%;
-    width: 99%;
+    width: 91%;
     border-width: 2px;
 }
 }
@@ -156,8 +159,8 @@ animation-delay: 0s
 }
 #fire {
     position: absolute;
-    top: -29%;
-    left: -95%;
+    top: -31%;
+    left: -98%;
     z-index: 1;
     opacity: 1;
     transform: translate(50%,50%) scale(0.4);
