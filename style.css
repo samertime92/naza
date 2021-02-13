@@ -141,10 +141,10 @@ animation-delay: 0s
     z-index: 2;
     opacity: 1;
     transform: translate(50%,50%);
-    width: calc(600px / 6);
+    width: calc(10000px / 19);
     height: 141px;
     background: url(nombre1.png);
-    animation: animate 0.8s steps(6) infinite;
+    animation: animate 2s steps(19) infinite;
     /* animation-timing-function: linear; */
     animation-play-state: running;
     animation-delay: 2s;
@@ -152,7 +152,7 @@ animation-delay: 0s
 @keyframes animate {
   0% { background-position: 0;opacity: 0;}
 50%{opacity: 1}
-    100%{background-position: 600px;opacity: 1}
+    100%{background-position: 10000px;opacity: 1}
 
 }
  /* #nombre{margin:0px;padding: 0px;left:0px;
