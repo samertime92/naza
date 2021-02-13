@@ -43,49 +43,38 @@ opacity: 0;
   #name-hollow {
     position: absolute;
     width: 50%;
-    left:47%;
+    left:50%;
     display: inline-block;
     margin: 0 0 0 0px;
     top: 10%;
-    animation-name: name,name0;
-    animation-duration: 3s,4s;
-    animation-iteration-count: 1,1;
-    animation-timing-function:ease-in,ease-in-out;
-    animation-fill-mode:forwards,forwards;
-    animation-delay: 0s,7s;
+    animation-name: name;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+    animation-timing-function:ease-in,;
+    animation-fill-mode:forwards;
+    animation-delay: 0s;
 }
-@keyframes name {
-  0%{opacity: 1;transform: rotate(0deg); ; width:0px}
-  100%{opacity: 1;transform: rotate(0deg); filter: blur(0px) }
-
-}
-@keyframes name0 {0%{top:10%}
-  100%{top:17%}
+@keyframes name {0%{top:50%;filter: blur(20px);width:0%;}
+  100%{top:20%;width:50%;left:50%;filter: blur(0px)}
 }
 
-#name-hollow1 {
+#name-hollow1 {z-index: 1;
   position: absolute;
   width: 50%;
-  left:48%;
+  left:50%;
   display: inline-block;
   margin: 0 0 0 0px;
-  top: 31%;
-  animation-name: name1,name11;
-  animation-duration: 5s,4s;
-  animation-iteration-count: 1,1;
-  animation-timing-function:ease-in,ease-in-out;
-  animation-fill-mode:forwards,forwards;
-  animation-delay: 0s,5s;
+  top: 50%;
+  animation-name: name11;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-timing-function:ease-in;
+  animation-fill-mode:forwards;
+  animation-delay: 0s;
 }
-@keyframes name1 {
-  0%{opacity: 1;filter: blur(20px);transform: rotate(0deg); width:0px}
-  30%{opacity: 1 ;}
 
-  100%{opacity: 1;transform: rotate(0deg); filter: blur(0px) }
-
-}
-@keyframes name11 {0%{top:31%}
-  100%{top:60%}
+@keyframes name11 {0%{top:50%;filter: blur(20px);width:0%;}
+  100%{top:72%;width:50%;left:50%;filter: blur(0px)}
 }
 
 #maincontainer{width:100%;;margin: 0px;padding: 0px;position: relative;}
@@ -145,7 +134,7 @@ animation-delay: 0s
     animation: animate 2s steps(19) infinite;
     /* animation-timing-function: linear; */
     animation-play-state: running;
-    animation-delay: 2s;
+    animation-delay: 0s;
 }
 @keyframes animate {
   0% { background-position: 0;opacity: 1;}
