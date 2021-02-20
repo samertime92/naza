@@ -15,15 +15,27 @@
         <div id="langdiv">
     <h2 id="en" class="lang">ENG</h2 class="lang"> <h2 class="lang" id="es">ESP</h2> <h2 class="lang" id="it">ITA</h2><h2 id="por"class="lang">POR</h2>
         </div>
+        <img id="naznombre" src="naznombre.png" alt="">
         <img id="name-hollow" src="name-hollow.png" alt="">
         <img id="name-hollow1" src="name-hollow.png" alt="">
+        <div id="thenazdiv">
         <img id="naz-desgin" src="naz.desgin1.png"alt="">
-        <div id="fire">
-          </div>
+  </div>
           <div id="main-btn">
             <h2 id="works"> WORKS</h3>
               <h2 id="about"> ABOUT ME</h3>
                 <h2 id="contact"> CONTACT</h3>
+          </div>
+          <img id="border" src="border.png" alt="">
+          <div id="bor">
+            <p class="p1"> <span id="photo">◉ PHOTO </span><br> </h3>
+              <span id="video">◉  VIDEO </span><br> </h3>
+                <span id="desgin">◉  DESIGN </span><br> </h3>
+                  <span id="illustrate">◉  ILLUSTRATION </span> </p>
+          </div>
+          <div id="bor2">
+            <p class="p1"> <span id="photo">◉ RESUME </span><br> </h3>
+              <span id="video">◉  CV </span><br> </h3>
           </div>
 
         </div>
@@ -31,7 +43,71 @@
 
 
 
+
 <script type="text/javascript">
+function fuck(){
+const border=document.querySelector("#border")
+const works=document.querySelector("#works")
+
+  document.addEventListener("click",function(event){
+    if(event.target.closest("#border")||event.target.closest("#works")||event.target.closest("#bor"))return
+    else if(event.target.closest("#about")){
+      document.getElementById('border').style.width="100%"
+      document.getElementById('bor').style.display="none";
+      document.getElementById('bor2').style.display="inline-block";
+
+    }
+    else {
+      document.getElementById('border').style.width="0%";
+      clearTimeout(fuck,1000)
+      document.getElementById('nazfondo').style.filter="saturate(100%)";
+      document.getElementById('works').style.backgroundColor="rgb(255 255 255 / 0%)";
+      document.getElementById('works').style.color="#83a95c";
+      document.getElementById('about').style.backgroundColor="rgb(255 255 255 / 0%)";
+      document.getElementById('about').style.color="#83a95c";
+      document.getElementById('name-hollow').style.display="inline-block";
+      document.getElementById('name-hollow1').style.display="inline-block";
+      document.getElementById('thenazdiv').style.filter="blur(0px)";
+      document.getElementById('bor').style.display="none";
+      document.getElementById('bor2').style.display="none";
+
+    }
+  })}
+document.getElementById('works').onclick=function functionName(){
+
+  setTimeout(fuck,1000)
+  document.getElementById('works').style.backgroundColor="#c551da"
+  document.getElementById('works').style.color="white"
+  document.getElementById('border').style.width="100%"
+   document.getElementById('nazfondo').style.filter="saturate(30%)"
+   document.getElementById('name-hollow').style.display="none";
+   document.getElementById('name-hollow1').style.display="none";
+   document.getElementById('thenazdiv').style.filter="blur(5px)";
+  document.getElementById('border').style.left="3%";
+  document.getElementById('bor').style.display="inline-block";
+  document.getElementById('bor2').style.display="none";
+  document.getElementById('about').style.backgroundColor="rgb(255 255 255 / 0%)";
+  document.getElementById('about').style.color="#83a95c";
+
+}
+document.getElementById('about').onclick=function functionName(){
+
+  setTimeout(fuck,1000)
+  document.getElementById('about').style.backgroundColor="#c551da"
+  document.getElementById('about').style.color="white"
+  document.getElementById('works').style.backgroundColor="rgb(255 255 255 / 0%)";
+  document.getElementById('works').style.color="#83a95c";
+  document.getElementById('border').style.width="100%"
+   document.getElementById('nazfondo').style.filter="saturate(30%)"
+   document.getElementById('name-hollow').style.display="none";
+   document.getElementById('name-hollow1').style.display="none";
+   document.getElementById('thenazdiv').style.filter="blur(5px)";
+  document.getElementById('border').style.left="3%";
+  document.getElementById('bor2').style.display="inline-block";
+
+  // document.getElementById('bor').style.display="inline-block";
+
+}
 
 </script>
   </body>

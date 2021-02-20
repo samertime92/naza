@@ -1,9 +1,61 @@
 body{margin:0px;padding:0px;}
 @media only screen and (min-width: 320px)  {
+  #thenazdiv{border-style: none;filter: blur(0px);transition: 1s;}
+  #bor {overflow: auto;
+    z-index: 4;
+    position: absolute;
+    border-style: none;
+    height: 30%;
+    width: 54%;
+    left: 10%;
+    top: 55%;
+    animation-name: texts;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    display: none;
+    animation-iteration-count: 1;
+    animation-delay: 0.5s;
+}
+#bor2 {overflow: auto;
+  z-index: 4;
+  position: absolute;
+  border-style: none;
+  height: 30%;
+  width: 54%;
+  left: 10%;
+  top: 55%;
+  animation-name: texts;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  display: none;
+  animation-iteration-count: 1;
+  animation-delay: 0.5s;
+}
+@keyframes texts {
+from {
+ opacity: 0;
+ transform: translate3d(-100%,0,0);
+}
+to {
+ opacity: 1;
+ transform: none;
+}
+}
+
+  .p1{position: absolute;;text-align: left;color:rgb(197, 81, 218);font-family: cooper-black-std, serif;line-height: 193%;top:1%;margin-top: 1%;margin-bottom: 1%;}
+  #naznombre {
+    position: absolute;
+    top: 25%;
+    left: 33%;
+    width: 55%;
+    margin: 10%;
+}
+  #border{float: right;transform: translateX(-90px);display: inline-block;transition-property:width,transform;transition-duration: 1s,0.1s; width:0px; ;position: absolute;left:50%;top:50%;z-index: 4;height: 40%;}
   @keyframes bt1 {
     0%{opacity: 0;filter: blur(20px);}
       100%{opacity: 1;filter:blur(0px)}
-
   }
 
   #langdiv {
@@ -29,9 +81,8 @@ body{margin:0px;padding:0px;}
   }
 
   .lang{font-family: cooper-black-std, serif;padding-right: 10px;border-right:solid;z-index: 2;float:left;position: relative;font-size: 10px; margin-right: 5px;margin-left: 5px;color: #83a95c}
-#works{ margin-top: 8px;margin-bottom: 6px;padding: 5px 11px 5px 11px;margin-left:2%;margin-right: 2%;font-family: cooper-black-std, serif;;position: relative;display: inline-block;border-style: solid;border-radius: 3px;border-color: #adce74;float:left;color:#83a95c;font-size: 13px;animation:btns;
-animation-duration: 2s;animation-timing-function: linear;animation-fill-mode: forwards;animation-iteration-count: 1s;opacity: 0;
-animation-delay:5s; }
+#works{background-color:none;margin-top: 8px;margin-bottom: 6px;padding: 5px 11px 5px 11px;margin-left:2%;margin-right: 2%;font-family: cooper-black-std, serif;;position: relative;display: inline-block;border-style: solid;border-radius: 3px;border-color: #adce74;float:left;color:#83a95c;font-size: 13px;animation:btns;animation-duration: 2s;animation-timing-function: linear;animation-fill-mode: forwards;animation-iteration-count: 1s;opacity: 0;
+animation-delay:5s;transition:2s }
 @keyframes btns {
   0%{ font-size: 0px;opacity: 0;}
   100% {
@@ -71,50 +122,48 @@ animation-duration: 2s;animation-timing-function: linear;animation-fill-mode: fo
     border-width: 2px;
 }
 }
-  #name-hollow {
+  #name-hollow {margin-top: 0%;margin-bottom: 2%;
     position: absolute;
     width: 50%;
     left:50%;
     display: inline-block;
-    margin: 0 0 0 0px;
-    top: 10%;
+    top: 22%;
     animation-name: name;
-    animation-duration: 7s;
-    animation-iteration-count: 1;
-    animation-timing-function:ease-in,;
-    animation-fill-mode:forwards;
-    animation-delay: 0s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear,;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
-@keyframes name {0%{top:50%;filter: blur(20px);width:0%;}
-  100%{top:20%;width:50%;left:50%;filter: blur(0px)}
+@keyframes name {0%{opacity:0}
+  25%{opacity: 1}
+  50%{opacity: 0}
+  75%{opacity: 1}
+  100%{opacity: 0}
 }
 
-#name-hollow1 {z-index: 1;
+#name-hollow1 {z-index: 1;margin-top: 2%;margin-bottom: 0%;
   position: absolute;
   width: 50%;
   left:50%;
   display: inline-block;
-  margin: 0 0 0 0px;
-  top: 50%;
-  animation-name: name11;
-  animation-duration: 4s;
-  animation-iteration-count: 1;
-  animation-timing-function:ease-in;
+  top: 40%;
+  animation-name: name;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function:linear;
   animation-fill-mode:forwards;
-  animation-delay: 0s;
+  animation-delay: 3.5s;
+  opacity: 0;
 }
 
-@keyframes name11 {0%{top:50%;filter: blur(20px);width:0%;}
-100% {
-    top: 63%;
-    width: 50%;
-    left: 50%;
-    filter: blur(0px);
-}
-}
+
 
 #maincontainer{width:100%;;margin: 0px;padding: 0px;position: relative;}
-#nazfondo{width:100%;height:auto;z-index: 0;position: absolute;}
+#nazfondo{width:100%;height:auto;z-index: 0;position: absolute;filter: saturate(100%);
+transition-property: filter;
+}
 #naz-desgin {
   z-index: 2;
   position: relative;
@@ -127,11 +176,11 @@ animation-duration: 2s;animation-timing-function: linear;animation-fill-mode: fo
   margin-top: 15%;
   margin-bottom: 2%;
   animation: nazaa,nazaa1,nazaa2 ;
-  animation-duration: 4s,4s,10s;
+  animation-duration: 2s,2s,10s;
   animation-fill-mode: forwards,forwards,forwards;
   animation-iteration-count: 1,1,infinite;
   animation-timing-function: ease-out,ease-out,linear;
-  animation-delay: 1s,5s,15s;
+  animation-delay: 0s,2s,15s;
   visibility: hidden;
 }
 @keyframes nazaa {
