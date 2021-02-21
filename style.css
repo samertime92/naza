@@ -152,7 +152,7 @@ animation-iteration-count: 1s; animation-name: btns;animation-delay: 5.5s;opacit
     animation-name: name;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-    animation-timing-function:linear,;
+    animation-timing-function:linear;
     animation-delay: 3s;
     animation-fill-mode: forwards;
     opacity: 0;
@@ -284,5 +284,178 @@ animation-delay: 0s
   0% { background-position: 0px;opacity: 1;}
     100%{background-position: 10000px;opacity: 1;}
  }*/
+
+}
+@media only screen and (min-width: 360px)  {
+  #naz-desgin {
+    z-index: 2;
+    position: relative;
+    top: 40px;
+    left: -7px;
+    width: 56%;
+    display: inline-block;
+    margin-right: 27%;
+    margin-left: 1%;
+    margin-top: 15%;
+    margin-bottom: 2%;
+    animation: nazaa,nazaa1,nazaa2;
+    animation-duration: 2s,2s,10s;
+    animation-fill-mode: forwards,forwards,forwards;
+    animation-iteration-count: 1,1,infinite;
+    animation-timing-function: ease-out,ease-out,linear;
+    animation-delay: 0s,2s,15s;
+    visibility: hidden;
+}
+#name-hollow {
+    margin-top: 0%;
+    margin-bottom: 2%;
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    display: inline-block;
+    top: 21%;
+    animation-name: name;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+  #langdiv {
+    padding-right: -50%;
+    display: inline-block;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    margin-right: 0.5%;
+    right: 0px;
+    opacity: 0;
+    border-color: #83a95c;
+    border-radius: 3px;
+    border-style: hidden;
+    border-left: none;
+    z-index: 2;
+    position: absolute;
+    background-color: none;
+    width: 65%;
+    animation: bt1;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+  #sec1 {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    margin-bottom: 10%;
+    animation: sec1 5s forwards infinite ease;
+    animation-delay: 0s;
+}
+  .lang {
+    font-family: cooper-black-std, serif;
+    padding-right: 10px;
+    border-right: solid;
+    z-index: 2;
+    float: left;
+    position: relative;
+    font-size: 11px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #83a95c;
+}
+@keyframes btns {
+
+  0% {
+      font-size: 0px;
+      opacity: 0;
+  }
+
+  100% {
+      font-size: 12.5px;
+      opacity: 1;
+  }
+}
+
+
+}
+@media only screen and (min-width:375px){
+
+  .p1 {
+    position: absolute;
+    text-align: left;
+    color: rgb(197, 81, 218);
+    font-family: cooper-black-std, serif;
+    line-height: 223%;
+    top: 0%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+  #border {
+    float: right;
+    transform: translateX(-90px);
+    display: inline-block;
+    transition-property: width,transform;
+    transition-duration: 1s,0.1s;
+    width: 0px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 4;
+    height: 37%;
+}
+
+  #main-btn {
+    margin-top: 5%;
+    display: inline-block;
+    margin-right: 0px;
+    margin-left: 25px;
+    top: 8%;
+    right: -1%;
+    position: relative;
+    width: 27%;
+    height: 10%;
+    border-radius: 3px;
+    border-style: solid none solid solid;
+    border-color: #83a95c;
+    border-width: 2px;
+    animation-name: bt;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+    opacity: 0;
+}
+}
+@media only screen and (min-width:400px){
+  .lang {
+    font-family: cooper-black-std, serif;
+    padding-right: 10px;
+    border-right: solid;
+    z-index: 2;
+    float: left;
+    position: relative;
+    font-size: 13px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #83a95c;
+}
+  @keyframes btns {
+
+
+  0% {
+    font-size: 0px;
+    opacity: 0;
+}
+
+100% {
+    font-size: 14.5px;
+    opacity: 1;
+}
+}
+
 
 }
