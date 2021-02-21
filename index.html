@@ -22,20 +22,26 @@
         <img id="naz-desgin" src="naz.desgin1.png"alt="">
   </div>
           <div id="main-btn">
-            <h2 id="works"> WORKS</h3>
-              <h2 id="about"> ABOUT ME</h3>
-                <h2 id="contact"> CONTACT</h3>
+            <h2 id="works"> WORKS</h2>
+              <h2 id="about"> ABOUT ME</h2>
+                <h2 id="contact"> CONTACT</h2>
           </div>
           <img id="border" src="border.png" alt="">
           <div id="bor">
-            <p class="p1"> <span id="photo">◉ PHOTO </span><br> </h3>
-              <span id="video">◉  VIDEO </span><br> </h3>
-                <span id="desgin">◉  DESIGN </span><br> </h3>
-                  <span id="illustrate">◉  ILLUSTRATION </span> </p>
+            <p class="p1"> <span id="photo">◉ PHOTO </span><br>
+              <span id="video">◉  VIDEO </span><br>
+                <span id="des">◉  DESIGN </span><br>
+                  <span id="illus">◉  ILLUSTRATION </span> </p>
           </div>
           <div id="bor2">
-            <p class="p1"> <span id="photo">◉ RESUME </span><br> </h3>
-              <span id="video">◉  CV </span><br> </h3>
+            <p class="p1"> <span id="resume">◉ RESUME </span><br>
+              <span id="cv">◉  CV </span><br> </p>
+          </div>
+          <div id="bor3">
+            <p class="p1"> <span id="email">◉ EMAIL </span><br>
+              <span id="whats">◉  WHATS APP </span><br>
+              <span id="insta">◉  INSTAGRAM</span><br>
+              <span id="linked">◉  LINKEDIN</span></p>
           </div>
 
         </div>
@@ -45,37 +51,111 @@
 
 
 <script type="text/javascript">
-function fuck(){
+document.getElementById('es').onclick=function functionName(){
+  document.getElementById('works').innerHTML="OBRAS";
+  document.getElementById('about').innerHTML="SOBRE MÍ";
+  document.getElementById('contact').innerHTML="CONTACTO";
+  document.getElementById('photo').innerHTML="◉ FOTO";
+  document.getElementById('video').innerHTML="◉ VIDEO ";
+  document.getElementById('des').innerHTML="◉ DISEÑO ";
+  document.getElementById('illus').innerHTML=" ◉ ILUSTRACIÓN";
+
+  document.getElementById('resume').innerHTML="◉ RESUMEN";
+  document.getElementById('cv').innerHTML="◉ CURRÍCULUM";
+  document.getElementById('photo').innerHTML="◉ FOTO";
+
+  document.getElementById('email').innerHTML="◉ E-MAIL";
+
+}
+document.getElementById('en').onclick=function functionName(){
+  document.getElementById('works').innerHTML="WORKS";
+  document.getElementById('about').innerHTML="ABOUT ME";
+  document.getElementById('contact').innerHTML="CONTACT";
+
+  document.getElementById('photo').innerHTML="◉ PHOTO";
+  document.getElementById('video').innerHTML="◉ VIDEO ";
+  document.getElementById('des').innerHTML="◉ DESIGN ";
+  document.getElementById('illus').innerHTML="◉ ILLUSTRATION";
+
+  document.getElementById('resume').innerHTML="◉ RESUME";
+  document.getElementById('cv').innerHTML="◉ CV";
+  document.getElementById('email').innerHTML="◉ EMAIL";
+
+}
+document.getElementById('por').onclick=function functionName(){
+  document.getElementById('works').innerHTML="TOCAM";
+  document.getElementById('about').innerHTML="SOBRE MIM";
+  document.getElementById('contact').innerHTML="CONTATO";
+
+  document.getElementById('photo').innerHTML="◉ FOTO ";
+  document.getElementById('video').innerHTML="◉ VÍDEO ";
+  document.getElementById('des').innerHTML="◉ DESIGN ";
+  document.getElementById('illus').innerHTML="◉ ILUSTRAÇÃO";
+
+  document.getElementById('resume').innerHTML="◉ RESUMO";
+  document.getElementById('cv').innerHTML="◉ CURRÍCULO";
+  document.getElementById('email').innerHTML="◉ O EMAIL";
+
+}
+document.getElementById('it').onclick=function functionName(){
+  document.getElementById('works').innerHTML=" GIOCA ";
+  document.getElementById('about').innerHTML=" SU DI ME ";
+  document.getElementById('contact').innerHTML=" CONTATTO ";
+
+  document.getElementById('photo').innerHTML="◉ FOTO  ";
+  document.getElementById('video').innerHTML="◉ VIDEO  ";
+  document.getElementById('des').innerHTML="◉ DESIGN  ";
+  document.getElementById('illus').innerHTML="◉ ILLUSTRAZIONE";
+
+  document.getElementById('resume').innerHTML="◉ ASTRATTO";
+  document.getElementById('cv').innerHTML="◉ CURRICULUM VITAE ";
+  document.getElementById('email').innerHTML="◉ E-MAIL";
+
+}
+function close(){
 const border=document.querySelector("#border")
 const works=document.querySelector("#works")
+const about=document.querySelector("#about")
+const contact=document.querySelector("#contact")
 
   document.addEventListener("click",function(event){
     if(event.target.closest("#border")||event.target.closest("#works")||event.target.closest("#bor"))return
-    else if(event.target.closest("#about")){
+     if(event.target.closest("#about")||event.target.closest("#bor2")){
       document.getElementById('border').style.width="100%"
       document.getElementById('bor').style.display="none";
       document.getElementById('bor2').style.display="inline-block";
 
     }
+    else if(event.target.closest("#contact")||event.target.closest("#bor3")){
+      document.getElementById('border').style.width="100%"
+      document.getElementById('bor').style.display="none";
+      document.getElementById('bor2').style.display="none";
+      document.getElementById('bor3').style.display="inline-block";
+
+
+    }
+
     else {
       document.getElementById('border').style.width="0%";
-      clearTimeout(fuck,1000)
+      clearTimeout(close,1000)
       document.getElementById('nazfondo').style.filter="saturate(100%)";
       document.getElementById('works').style.backgroundColor="rgb(255 255 255 / 0%)";
       document.getElementById('works').style.color="#83a95c";
       document.getElementById('about').style.backgroundColor="rgb(255 255 255 / 0%)";
       document.getElementById('about').style.color="#83a95c";
+      document.getElementById('contact').style.backgroundColor="rgb(255 255 255 / 0%)";
+      document.getElementById('contact').style.color="#83a95c";
       document.getElementById('name-hollow').style.display="inline-block";
       document.getElementById('name-hollow1').style.display="inline-block";
       document.getElementById('thenazdiv').style.filter="blur(0px)";
       document.getElementById('bor').style.display="none";
       document.getElementById('bor2').style.display="none";
-
-    }
+      document.getElementById('bor3').style.display="none";
+}
   })}
 document.getElementById('works').onclick=function functionName(){
 
-  setTimeout(fuck,1000)
+  setTimeout(close,1000)
   document.getElementById('works').style.backgroundColor="#c551da"
   document.getElementById('works').style.color="white"
   document.getElementById('border').style.width="100%"
@@ -86,28 +166,55 @@ document.getElementById('works').onclick=function functionName(){
   document.getElementById('border').style.left="3%";
   document.getElementById('bor').style.display="inline-block";
   document.getElementById('bor2').style.display="none";
+  document.getElementById('bor3').style.display="none";
   document.getElementById('about').style.backgroundColor="rgb(255 255 255 / 0%)";
   document.getElementById('about').style.color="#83a95c";
+  document.getElementById('contact').style.backgroundColor="rgb(255 255 255 / 0%)";
+  document.getElementById('contact').style.color="#83a95c";
 
 }
 document.getElementById('about').onclick=function functionName(){
 
-  setTimeout(fuck,1000)
+  setTimeout(close,1000)
   document.getElementById('about').style.backgroundColor="#c551da"
   document.getElementById('about').style.color="white"
   document.getElementById('works').style.backgroundColor="rgb(255 255 255 / 0%)";
   document.getElementById('works').style.color="#83a95c";
+  document.getElementById('contact').style.backgroundColor="rgb(255 255 255 / 0%)";
+  document.getElementById('contact').style.color="#83a95c";
   document.getElementById('border').style.width="100%"
-   document.getElementById('nazfondo').style.filter="saturate(30%)"
+   document.getElementById('nazfondo').style.filter="saturate(10%)"
    document.getElementById('name-hollow').style.display="none";
    document.getElementById('name-hollow1').style.display="none";
    document.getElementById('thenazdiv').style.filter="blur(5px)";
   document.getElementById('border').style.left="3%";
   document.getElementById('bor2').style.display="inline-block";
+  document.getElementById('bor3').style.display="none";
 
-  // document.getElementById('bor').style.display="inline-block";
 
 }
+document.getElementById('contact').onclick=function functionName(){
+
+  setTimeout(close,1000)
+  document.getElementById('contact').style.backgroundColor="#c551da"
+  document.getElementById('contact').style.color="white"
+  document.getElementById('works').style.backgroundColor="rgb(255 255 255 / 0%)";
+  document.getElementById('works').style.color="#83a95c";
+  document.getElementById('about').style.backgroundColor="rgb(255 255 255 / 0%)";
+  document.getElementById('about').style.color="#83a95c";
+  document.getElementById('border').style.width="100%"
+   document.getElementById('nazfondo').style.filter="saturate(10%)"
+   document.getElementById('name-hollow').style.display="none";
+   document.getElementById('name-hollow1').style.display="none";
+   document.getElementById('thenazdiv').style.filter="blur(5px)";
+  document.getElementById('border').style.left="3%";
+  document.getElementById('bor3').style.display="inline-block";
+  document.getElementById('bor2').style.display="none";
+  document.getElementById('bor').style.display="none";
+
+
+}
+
 
 </script>
   </body>

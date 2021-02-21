@@ -15,7 +15,7 @@ body{margin:0px;padding:0px;}
     opacity: 0;
     display: none;
     animation-iteration-count: 1;
-    animation-delay: 0.5s;
+    animation-delay: 0.4s;
 }
 #bor2 {overflow: auto;
   z-index: 4;
@@ -31,7 +31,23 @@ body{margin:0px;padding:0px;}
   opacity: 0;
   display: none;
   animation-iteration-count: 1;
-  animation-delay: 0.5s;
+  animation-delay: 0.4s;
+}
+#bor3{overflow: auto;
+  z-index: 4;
+  position: absolute;
+  border-style: none;
+  height: 30%;
+  width: 54%;
+  left: 10%;
+  top: 55%;
+  animation-name: texts;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  display: none;
+  animation-iteration-count: 1;
+  animation-delay: 0.4s;
 }
 @keyframes texts {
 from {
@@ -82,7 +98,7 @@ to {
 
   .lang{font-family: cooper-black-std, serif;padding-right: 10px;border-right:solid;z-index: 2;float:left;position: relative;font-size: 10px; margin-right: 5px;margin-left: 5px;color: #83a95c}
 #works{background-color:none;margin-top: 8px;margin-bottom: 6px;padding: 5px 11px 5px 11px;margin-left:2%;margin-right: 2%;font-family: cooper-black-std, serif;;position: relative;display: inline-block;border-style: solid;border-radius: 3px;border-color: #adce74;float:left;color:#83a95c;font-size: 13px;animation:btns;animation-duration: 2s;animation-timing-function: linear;animation-fill-mode: forwards;animation-iteration-count: 1s;opacity: 0;
-animation-delay:5s;transition:2s }
+animation-delay:5s;transition:0.7s }
 @keyframes btns {
   0%{ font-size: 0px;opacity: 0;}
   100% {
@@ -90,11 +106,16 @@ animation-delay:5s;transition:2s }
     opacity: 1;
 }
 }
-#about{margin-top: 8px;margin-bottom: 6px;padding: 5px 11px 5px 11px;margin-left:2%; margin-right: 2%;font-family: cooper-black-std, serif;;position: relative;display: inline-block;border-style: solid;border-radius: 3px;border-color: #adce74;float: left;color:#83a95c ;font-size: 13px;
-animation-duration: 2s;animation-timing-function: linear;animation-fill-mode: forwards;animation-iteration-count: 1s; animation-name: btns;animation-delay: 5.5s;opacity: 0;}
-#contact{animation-duration: 2s;animation-timing-function: linear;animation-fill-mode: forwards;animation-iteration-count: 1s; animation-name: btns;animation-delay: 6s;margin-top: 8px;margin-bottom: 6px;padding: 5px 11px 5px 11px;margin-left:2%; margin-right: 0%;font-family: cooper-black-std, serif;;position: relative;display: inline-block;border-style: solid;border-radius: 3px;border-color: #adce74;float: left;color:#83a95c;font-size: 13px;opacity:0;}
-
-#main-btn {
+#about{transition: 0.7s;margin-top: 8px;margin-bottom: 6px;padding: 5px 11px 5px 11px;margin-left:2%; margin-right: 2%;font-family: cooper-black-std, serif;;position: relative;display: inline-block;border-style: solid;border-radius: 3px;border-color: #adce74;float: left;color:#83a95c ;font-size: 13px;
+animation-duration: 2s;animation-timing-function: linear;animation-fill-mode: forwards;
+animation-iteration-count: 1s; animation-name: btns;animation-delay: 5.5s;opacity: 0;}
+#contact{transition: 0.7s;animation-duration: 2s;animation-timing-function: linear;
+  animation-fill-mode: forwards;animation-iteration-count: 1s; animation-name: btns;
+  animation-delay: 6s;margin-top: 8px;margin-bottom: 6px;padding: 5px 11px 5px 11px;
+  margin-left:2%; margin-right: 0%;font-family: cooper-black-std, serif;;position: relative;
+  display: inline-block;border-style: solid;border-radius: 3px;border-color: #adce74;float: left;color:#83a95c;
+  font-size: 13px;opacity:0;}
+ #main-btn {
     margin-top: 5%;
     display: inline-block;
     margin-right: 0px;
