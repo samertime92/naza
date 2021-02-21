@@ -287,6 +287,75 @@ animation-delay: 0s
 
 }
 @media only screen and (min-width: 360px)  {
+  #main-btn {
+    margin-top: 5%;
+    display: inline-block;
+    margin-right: 0px;
+    margin-left: 25px;
+    top: 13%;
+    right: 0%;
+    position: relative;
+    width: 27%;
+    height: 10%;
+    border-radius: 3px;
+    border-style: solid none solid solid;
+    border-color: #83a95c;
+    border-width: 2px;
+    animation-name: bt;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+    opacity: 0;
+}
+  #naz-desgin {
+    z-index: 2;
+    position: relative;
+    top: 68px;
+    left: -7px;
+    width: 56%;
+    display: inline-block;
+    margin-right: 27%;
+    margin-left: 1%;
+    margin-top: 15%;
+    margin-bottom: 2%;
+    animation: nazaa,nazaa1,nazaa2;
+    animation-duration: 2s,2s,10s;
+    animation-fill-mode: forwards,forwards,forwards;
+    animation-iteration-count: 1,1,infinite;
+    animation-timing-function: ease-out,ease-out,linear;
+    animation-delay: 0s,2s,15s;
+    visibility: hidden;
+}
+  #border {
+    float: right;
+    transform: translateX(-90px);
+    display: inline-block;
+    transition-property: width,transform;
+    transition-duration: 1s,0.1s;
+    width: 0px;
+    position: absolute;
+    left: 50%;
+    top: 49%;
+    z-index: 4;
+    height: 34%;
+}
+  #bor {
+    overflow: auto;
+    z-index: 4;
+    position: absolute;
+    border-style: none;
+    height: 30%;
+    width: 54%;
+    left: 10%;
+    top: 52%;
+    animation-name: texts;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    display: none;
+    animation-iteration-count: 1;
+    animation-delay: 0.4s;
+}
   #naz-desgin {
     z-index: 2;
     position: relative;
